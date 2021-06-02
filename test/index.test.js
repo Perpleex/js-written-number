@@ -397,6 +397,147 @@ describe("written-number", function () {
     });
   });
 
+  describe("writtenNumber(n, { lang: 'ch', ... })", function () {
+    before(function () {
+      writtenNumber.defaults.lang = "ch";
+    });
+
+    it("gets exposed", function () {
+      should.exist(writtenNumber);
+      writtenNumber.should.be.instanceof(Function);
+    });
+
+    it("correctly converts numbers < 10", function () {
+      writtenNumber(0).should.equal("zéro");
+      writtenNumber(3).should.equal("trois");
+      writtenNumber(8).should.equal("huit");
+    });
+
+    it("correctly converts numbers < 20", function () {
+      writtenNumber(13).should.equal("treize");
+      writtenNumber(19).should.equal("dix-neuf");
+    });
+
+    it("correctly converts numbers < 100", function () {
+      writtenNumber(20).should.equal("vingt");
+      writtenNumber(25).should.equal("vingt-cinq");
+      writtenNumber(70).should.equal("septante");
+      writtenNumber(71).should.equal("septante et un");
+      writtenNumber(73).should.equal("septante-trois");
+      writtenNumber(80).should.equal("huitante");
+      writtenNumber(81).should.equal("huitante et un");
+      writtenNumber(88).should.equal("huitante-huit");
+      writtenNumber(90).should.equal("nonante");
+      writtenNumber(91).should.equal("nonante et un");
+      writtenNumber(91).should.equal("nonante-deux");
+    });
+
+    it("correctly converts numbers < 1000", function () {
+      writtenNumber(100).should.equal("cent");
+      writtenNumber(110).should.equal("cent dix");
+      writtenNumber(200).should.equal("deux cents");
+      writtenNumber(242).should.equal("deux cent quarante-deux");
+    });
+
+    it("correctly converts numbers > 1000", function () {
+      writtenNumber(1234).should.equal("mille deux cent trente-quatre");
+      writtenNumber(4000).should.equal("quatre mille");
+      writtenNumber(4323).should.equal("quatre mille trois cent vingt-trois");
+      writtenNumber(1000000).should.equal("un million");
+      writtenNumber(2000000).should.equal("deux millions");
+      writtenNumber(2000001).should.equal("deux millions un");
+      writtenNumber(4323000).should.equal(
+        "quatre millions trois cent vingt-trois mille"
+      );
+      writtenNumber(4323055).should.equal(
+        "quatre millions trois cent vingt-trois mille cinquante-cinq"
+      );
+      writtenNumber(1570025).should.equal(
+        "un million cinq cent soixante-dix mille vingt-cinq"
+      );
+    });
+
+    it("correctly converts numbers > 1 000 000 000", function () {
+      writtenNumber(1000000000).should.equal("un milliard");
+      writtenNumber(2580000000).should.equal(
+        "deux milliards cinq cent quatre-vingts millions"
+      );
+      writtenNumber(1000000000000).should.equal("un billion");
+      writtenNumber(3627000000000).should.equal(
+        "trois billions six cent vingt-sept milliards"
+      );
+    });
+  });
+
+  describe("writtenNumber(n, { lang: 'be', ... })", function () {
+    before(function () {
+      writtenNumber.defaults.lang = "be";
+    });
+
+    it("gets exposed", function () {
+      should.exist(writtenNumber);
+      writtenNumber.should.be.instanceof(Function);
+    });
+
+    it("correctly converts numbers < 10", function () {
+      writtenNumber(0).should.equal("zéro");
+      writtenNumber(3).should.equal("trois");
+      writtenNumber(8).should.equal("huit");
+    });
+
+    it("correctly converts numbers < 20", function () {
+      writtenNumber(13).should.equal("treize");
+      writtenNumber(19).should.equal("dix-neuf");
+    });
+
+    it("correctly converts numbers < 100", function () {
+      writtenNumber(20).should.equal("vingt");
+      writtenNumber(25).should.equal("vingt-cinq");
+      writtenNumber(73).should.equal("septante et un");
+      writtenNumber(73).should.equal("septante trois");
+      writtenNumber(80).should.equal("quatre-vingts");
+      writtenNumber(88).should.equal("quatre-vingt-huit");
+      writtenNumber(90).should.equal("nonante");
+      writtenNumber(91).should.equal("nonante et un");
+    });
+
+    it("correctly converts numbers < 1000", function () {
+      writtenNumber(100).should.equal("cent");
+      writtenNumber(110).should.equal("cent dix");
+      writtenNumber(200).should.equal("deux cents");
+      writtenNumber(242).should.equal("deux cent quarante-deux");
+    });
+
+    it("correctly converts numbers > 1000", function () {
+      writtenNumber(1234).should.equal("mille deux cent trente-quatre");
+      writtenNumber(4000).should.equal("quatre mille");
+      writtenNumber(4323).should.equal("quatre mille trois cent vingt-trois");
+      writtenNumber(1000000).should.equal("un million");
+      writtenNumber(2000000).should.equal("deux millions");
+      writtenNumber(2000001).should.equal("deux millions un");
+      writtenNumber(4323000).should.equal(
+        "quatre millions trois cent vingt-trois mille"
+      );
+      writtenNumber(4323055).should.equal(
+        "quatre millions trois cent vingt-trois mille cinquante-cinq"
+      );
+      writtenNumber(1570025).should.equal(
+        "un million cinq cent soixante-dix mille vingt-cinq"
+      );
+    });
+
+    it("correctly converts numbers > 1 000 000 000", function () {
+      writtenNumber(1000000000).should.equal("un milliard");
+      writtenNumber(2580000000).should.equal(
+        "deux milliards cinq cent quatre-vingts millions"
+      );
+      writtenNumber(1000000000000).should.equal("un billion");
+      writtenNumber(3627000000000).should.equal(
+        "trois billions six cent vingt-sept milliards"
+      );
+    });
+  });
+
   describe("writtenNumber(n, { lang: 'it', ... })", function () {
     before(function () {
       writtenNumber.defaults.lang = "it";

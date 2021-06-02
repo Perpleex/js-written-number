@@ -203,6 +203,260 @@ module.exports={
 module.exports={
   "useLongScale": false,
   "baseSeparator": "-",
+  "unitSeparator": "",
+  "base": {
+    "0": "zéro",
+    "1": "un",
+    "2": "deux",
+    "3": "trois",
+    "4": "quatre",
+    "5": "cinq",
+    "6": "six",
+    "7": "sept",
+    "8": "huit",
+    "9": "neuf",
+    "10": "dix",
+    "11": "onze",
+    "12": "douze",
+    "13": "treize",
+    "14": "quatorze",
+    "15": "quinze",
+    "16": "seize",
+    "17": "dix-sept",
+    "18": "dix-huit",
+    "19": "dix-neuf",
+    "20": "vingt",
+    "30": "trente",
+    "40": "quarante",
+    "50": "cinquante",
+    "60": "soixante",
+    "70": "septante",
+    "80": "quatre-vingt",
+    "90": "nonante"
+  },
+  "units" : [
+    {
+      "singular": "cent",
+      "plural": "cents",
+      "avoidInNumberPlural": true,
+      "avoidPrefixException": [1]
+    },
+    {
+      "singular": "mille",
+      "avoidPrefixException": [1]
+    },
+    {
+      "singular": "million",
+      "plural": "millions"
+    },
+    {
+      "singular": "milliard",
+      "plural": "milliards"
+    },
+    {
+      "singular": "billion",
+      "plural": "billions"
+    },
+    {
+      "singular": "billiard",
+      "plural": "billiards"
+    },
+    {
+      "singular": "trillion",
+      "plural": "trillions"
+    },
+    {
+      "singular": "trilliard",
+      "plural": "trilliards"
+    },
+    {
+      "singular": "quadrillion",
+      "plural": "quadrillions"
+    },
+    {
+      "singular": "quadrilliard",
+      "plural": "quadrilliards"
+    },
+    {
+      "singular": "quintillion",
+      "plural": "quintillions"
+    },
+    {
+      "singular": "quintilliard",
+      "plural": "quintilliards"
+    },
+    {
+      "singular": "sextillion",
+      "plural": "sextillions"
+    },
+    {
+      "singular": "sextilliard",
+      "plural": "sextilliards"
+    },
+    {
+      "singular": "septillion",
+      "plural": "septillions"
+    },
+    {
+      "singular": "septilliard",
+      "plural": "septilliards"
+    },
+    {
+      "singular": "octillion",
+      "plural": "octillions"
+    }
+  ],
+  "unitExceptions": {
+    "21": "vingt et un",
+    "31": "trente et un",
+    "41": "quarante et un",
+    "51": "cinquante et un",
+    "61": "soixante et un",
+    "71": "septante et un",
+    "80": "quatre-vingts",
+    "91": "nonante et un"
+  }
+}
+
+},{}],4:[function(require,module,exports){
+module.exports={
+  "useLongScale": false,
+  "baseSeparator": "-",
+  "unitSeparator": "",
+  "base": {
+    "0": "zéro",
+    "1": "un",
+    "2": "deux",
+    "3": "trois",
+    "4": "quatre",
+    "5": "cinq",
+    "6": "six",
+    "7": "sept",
+    "8": "huit",
+    "9": "neuf",
+    "10": "dix",
+    "11": "onze",
+    "12": "douze",
+    "13": "treize",
+    "14": "quatorze",
+    "15": "quinze",
+    "16": "seize",
+    "17": "dix-sept",
+    "18": "dix-huit",
+    "19": "dix-neuf",
+    "20": "vingt",
+    "30": "trente",
+    "40": "quarante",
+    "50": "cinquante",
+    "60": "soixante",
+    "70": "soixante-dix",
+    "80": "quatre-vingt",
+    "90": "quatre-vingt-dix"
+  },
+  "units" : [
+    {
+      "singular": "cent",
+      "plural": "cents",
+      "avoidInNumberPlural": true,
+      "avoidPrefixException": [1]
+    },
+    {
+      "singular": "mille",
+      "avoidPrefixException": [1]
+    },
+    {
+      "singular": "million",
+      "plural": "millions"
+    },
+    {
+      "singular": "milliard",
+      "plural": "milliards"
+    },
+    {
+      "singular": "billion",
+      "plural": "billions"
+    },
+    {
+      "singular": "billiard",
+      "plural": "billiards"
+    },
+    {
+      "singular": "trillion",
+      "plural": "trillions"
+    },
+    {
+      "singular": "trilliard",
+      "plural": "trilliards"
+    },
+    {
+      "singular": "quadrillion",
+      "plural": "quadrillions"
+    },
+    {
+      "singular": "quadrilliard",
+      "plural": "quadrilliards"
+    },
+    {
+      "singular": "quintillion",
+      "plural": "quintillions"
+    },
+    {
+      "singular": "quintilliard",
+      "plural": "quintilliards"
+    },
+    {
+      "singular": "sextillion",
+      "plural": "sextillions"
+    },
+    {
+      "singular": "sextilliard",
+      "plural": "sextilliards"
+    },
+    {
+      "singular": "septillion",
+      "plural": "septillions"
+    },
+    {
+      "singular": "septilliard",
+      "plural": "septilliards"
+    },
+    {
+      "singular": "octillion",
+      "plural": "octillions"
+    }
+  ],
+  "unitExceptions": {
+    "21": "vingt et un",
+    "31": "trente et un",
+    "41": "quarante et un",
+    "51": "cinquante et un",
+    "61": "soixante et un",
+    "71": "soixante et onze",
+    "72": "soixante-douze",
+    "73": "soixante-treize",
+    "74": "soixante-quatorze",
+    "75": "soixante-quinze",
+    "76": "soixante-seize",
+    "77": "soixante-dix-sept",
+    "78": "soixante-dix-huit",
+    "79": "soixante-dix-neuf",
+    "80": "quatre-vingts",
+    "91": "quatre-vingt-onze",
+    "92": "quatre-vingt-douze",
+    "93": "quatre-vingt-treize",
+    "94": "quatre-vingt-quatorze",
+    "95": "quatre-vingt-quinze",
+    "96": "quatre-vingt-seize",
+    "97": "quatre-vingt-dix-sept",
+    "98": "quatre-vingt-dix-huit",
+    "99": "quatre-vingt-dix-neuf"
+  }
+}
+
+},{}],5:[function(require,module,exports){
+module.exports={
+  "useLongScale": false,
+  "baseSeparator": "-",
   "unitSeparator": "and ",
   "base": {
     "0": "zero",
@@ -242,7 +496,7 @@ module.exports={
   },
   "unitExceptions": []
 }
-},{}],4:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 module.exports={
   "useLongScale": false,
   "baseSeparator": "-",
@@ -298,7 +552,7 @@ module.exports={
   ],
   "unitExceptions": []
 }
-},{}],5:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 module.exports={
   "useLongScale": false,
   "baseSeparator": " ",
@@ -361,7 +615,7 @@ module.exports={
   "unitExceptions": []
 }
 
-},{}],6:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 module.exports={
   "useLongScale": true,
   "baseSeparator": " y ",
@@ -505,142 +759,9 @@ module.exports={
   ]
 }
 
-},{}],7:[function(require,module,exports){
-module.exports={
-  "useLongScale": false,
-  "baseSeparator": "-",
-  "unitSeparator": "",
-  "base": {
-    "0": "zéro",
-    "1": "un",
-    "2": "deux",
-    "3": "trois",
-    "4": "quatre",
-    "5": "cinq",
-    "6": "six",
-    "7": "sept",
-    "8": "huit",
-    "9": "neuf",
-    "10": "dix",
-    "11": "onze",
-    "12": "douze",
-    "13": "treize",
-    "14": "quatorze",
-    "15": "quinze",
-    "16": "seize",
-    "17": "dix-sept",
-    "18": "dix-huit",
-    "19": "dix-neuf",
-    "20": "vingt",
-    "30": "trente",
-    "40": "quarante",
-    "50": "cinquante",
-    "60": "soixante",
-    "70": "soixante-dix",
-    "80": "quatre-vingt",
-    "90": "quatre-vingt-dix"
-  },
-  "units" : [
-    {
-      "singular": "cent",
-      "plural": "cents",
-      "avoidInNumberPlural": true,
-      "avoidPrefixException": [1]
-    },
-    {
-      "singular": "mille",
-      "avoidPrefixException": [1]
-    },
-    {
-      "singular": "million",
-      "plural": "millions"
-    },
-    {
-      "singular": "milliard",
-      "plural": "milliards"
-    },
-    {
-      "singular": "billion",
-      "plural": "billions"
-    },
-    {
-      "singular": "billiard",
-      "plural": "billiards"
-    },
-    {
-      "singular": "trillion",
-      "plural": "trillions"
-    },
-    {
-      "singular": "trilliard",
-      "plural": "trilliards"
-    },
-    {
-      "singular": "quadrillion",
-      "plural": "quadrillions"
-    },
-    {
-      "singular": "quadrilliard",
-      "plural": "quadrilliards"
-    },
-    {
-      "singular": "quintillion",
-      "plural": "quintillions"
-    },
-    {
-      "singular": "quintilliard",
-      "plural": "quintilliards"
-    },
-    {
-      "singular": "sextillion",
-      "plural": "sextillions"
-    },
-    {
-      "singular": "sextilliard",
-      "plural": "sextilliards"
-    },
-    {
-      "singular": "septillion",
-      "plural": "septillions"
-    },
-    {
-      "singular": "septilliard",
-      "plural": "septilliards"
-    },
-    {
-      "singular": "octillion",
-      "plural": "octillions"
-    }
-  ],
-  "unitExceptions": {
-    "21": "vingt et un",
-    "31": "trente et un",
-    "41": "quarante et un",
-    "51": "cinquante et un",
-    "61": "soixante et un",
-    "71": "soixante et onze",
-    "72": "soixante-douze",
-    "73": "soixante-treize",
-    "74": "soixante-quatorze",
-    "75": "soixante-quinze",
-    "76": "soixante-seize",
-    "77": "soixante-dix-sept",
-    "78": "soixante-dix-huit",
-    "79": "soixante-dix-neuf",
-    "80": "quatre-vingts",
-    "91": "quatre-vingt-onze",
-    "92": "quatre-vingt-douze",
-    "93": "quatre-vingt-treize",
-    "94": "quatre-vingt-quatorze",
-    "95": "quatre-vingt-quinze",
-    "96": "quatre-vingt-seize",
-    "97": "quatre-vingt-dix-sept",
-    "98": "quatre-vingt-dix-huit",
-    "99": "quatre-vingt-dix-neuf"
-  }
-}
-
-},{}],8:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
+arguments[4][4][0].apply(exports,arguments)
+},{"dup":4}],10:[function(require,module,exports){
 module.exports={
   "useLongScale": true,
   "baseSeparator": "",
@@ -766,7 +887,7 @@ module.exports={
   ]
 }
 
-},{}],9:[function(require,module,exports){
+},{}],11:[function(require,module,exports){
 module.exports={
   "useLongScale": false,
   "baseSeparator": " ",
@@ -820,7 +941,7 @@ module.exports={
   "unitExceptions": []
 }
 
-},{}],10:[function(require,module,exports){
+},{}],12:[function(require,module,exports){
 module.exports={
     "useLongScale": false,
     "baseSeparator": "",
@@ -945,7 +1066,7 @@ module.exports={
     ]
 }
 
-},{}],11:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 module.exports={
   "useLongScale": true,
   "baseSeparator": " e ",
@@ -1052,7 +1173,7 @@ module.exports={
   ]
 }
 
-},{}],12:[function(require,module,exports){
+},{}],14:[function(require,module,exports){
 module.exports={
   "useLongScale": false,
   "baseSeparator": " e ",
@@ -1171,7 +1292,7 @@ module.exports={
   ]
 }
 
-},{}],13:[function(require,module,exports){
+},{}],15:[function(require,module,exports){
 module.exports={
     "useLongScale": false,
     "baseSeparator": " ",
@@ -1358,7 +1479,7 @@ module.exports={
     ],
     "unitExceptions": []
 }
-},{}],14:[function(require,module,exports){
+},{}],16:[function(require,module,exports){
 module.exports={
   "useLongScale": false,
   "baseSeparator": " ",
@@ -1411,7 +1532,7 @@ module.exports={
   ],
   "unitExceptions": []
 }
-},{}],15:[function(require,module,exports){
+},{}],17:[function(require,module,exports){
 module.exports={
   "useLongScale": false,
   "baseSeparator": " ",
@@ -1599,7 +1720,7 @@ module.exports={
   "unitExceptions": []
 }
 
-},{}],16:[function(require,module,exports){
+},{}],18:[function(require,module,exports){
 module.exports={
   "useLongScale": false,
   "baseSeparator": " ",
@@ -1650,12 +1771,12 @@ module.exports={
   ],
   "unitExceptions": []
 }
-},{}],17:[function(require,module,exports){
+},{}],19:[function(require,module,exports){
 "use strict";
 exports = module.exports = writtenNumber;
 var util = require("./util");
 
-var languages = ["en", "es", "ar", "az", "pt", "fr", "eo", "it", "vi", "tr", "uk", "ru", "id"];
+var languages = ["en", "es", "ar", "az", "pt", "fr","ch","be", "eo", "it", "vi", "tr", "uk", "ru", "id"];
 var i18n = {
   en: require("./i18n/en.json"),
   es: require("./i18n/es.json"),
@@ -1664,6 +1785,8 @@ var i18n = {
   pt: require("./i18n/pt.json"),
   ptPT: require("./i18n/pt-PT.json"),
   fr: require("./i18n/fr.json"),
+  ch: require("./i18n/ch.json"),
+  be: require("./i18n/be.json"),
   eo: require("./i18n/eo.json"),
   it: require("./i18n/it.json"),
   vi: require("./i18n/vi.json"),
@@ -1876,7 +1999,7 @@ function handleSmallerThan100(n, language, unit, baseCardinals, alternativeBaseC
   return alternativeBaseCardinals[dec] || baseCardinals[dec];
 }
 
-},{"./i18n/ar.json":1,"./i18n/az.json":2,"./i18n/en-indian.json":3,"./i18n/en.json":4,"./i18n/eo.json":5,"./i18n/es.json":6,"./i18n/fr.json":7,"./i18n/hu.json":8,"./i18n/id.json":9,"./i18n/it.json":10,"./i18n/pt-PT.json":11,"./i18n/pt.json":12,"./i18n/ru.json":13,"./i18n/tr.json":14,"./i18n/uk.json":15,"./i18n/vi.json":16,"./util":18}],18:[function(require,module,exports){
+},{"./i18n/ar.json":1,"./i18n/az.json":2,"./i18n/be.json":3,"./i18n/ch.json":4,"./i18n/en-indian.json":5,"./i18n/en.json":6,"./i18n/eo.json":7,"./i18n/es.json":8,"./i18n/fr.json":9,"./i18n/hu.json":10,"./i18n/id.json":11,"./i18n/it.json":12,"./i18n/pt-PT.json":13,"./i18n/pt.json":14,"./i18n/ru.json":15,"./i18n/tr.json":16,"./i18n/uk.json":17,"./i18n/vi.json":18,"./util":20}],20:[function(require,module,exports){
 "use strict";
 /**
  * Merges a set of default keys with a target object
@@ -1899,5 +2022,5 @@ function defaults(target, defs) {
 }
 exports.defaults = defaults;
 
-},{}]},{},[17])(17)
+},{}]},{},[19])(19)
 });
